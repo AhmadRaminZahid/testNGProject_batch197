@@ -10,6 +10,7 @@ public class Day14_Annotations {
     @Before and @After annotations: there are 5 before and after annotations
 
     Hierarchy: suite > class > group > test > method  ... this provides better control on test flow
+    // suite>test>group>class>method
 
     @Ignore : used to ignore / skip a test
     @Test (enabled = false) : disables the test ; another way of ignoring the test method (this one is stronger)
@@ -64,7 +65,7 @@ public class Day14_Annotations {
         System.out.println("after method...");
     }
 
-    @Test (priority = 2 , groups = "smoke test")
+    @Test (priority = 2 , groups = {"smoke test","",})
     public void test1(){
         System.out.println("Test case 1.... ");
     }
