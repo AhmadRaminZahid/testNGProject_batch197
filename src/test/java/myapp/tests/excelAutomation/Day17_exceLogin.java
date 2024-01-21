@@ -1,4 +1,4 @@
-package myapp.tests.topics;
+package myapp.tests.excelAutomation;
 
 import myapp.pages.DataTablesPage;
 import myapp.utilities.Driver;
