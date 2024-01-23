@@ -44,6 +44,6 @@ public class DataTablesPage {
 
     //th[text()='Name']  OR //th[@class='sorting sorting_desc']
 
-    @FindBy (xpath = "//th[text()='Name']")
+    @FindBy (xpath = "//tbody//td[@class='sorting_1']")
     public WebElement nameField;
 }

@@ -25,5 +25,14 @@ public class DataProviderUtils {
 
         return employeeInfo;
     }
+    //    Data Provider to get the user credentials from the EXCEL SHEET called 'user_data' (for Day18_DataProvider2 class)
+    @DataProvider
+    public Object[][] userData(){
+        String excelPath = "./resources/data_sheet.xlsx";
+        String sheetName = "user_data";
+        ExcelUtils excelUtils = new ExcelUtils(excelPath,sheetName);
+        Object[][] userInfo = excelUtils.getDataArrayWithoutFirstRow();
+        return userInfo;
+    }
 
 }
