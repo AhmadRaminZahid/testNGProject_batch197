@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Methods Suite" verbose="1" parallel="methods" thread-count="3">
+    <test name="Methods Level Parallel Testing">
+
+        <classes>
+            <class name="myapp.tests.smokeTest.Day16_OrangeHRMLogin_DynamicWay"/>
+            <class name="myapp.tests.excelAutomation.Day17_exceLogin"/>
+            <class name="myapp.tests.topics.Day15_configReaderTest"/>
+        </classes>
+    </test>
+</suite>

@@ -8,6 +8,7 @@ public class DataProviderUtils {
     @DataProvider
     public Object[][] employeeCredentialsProvider(){
         Object [][] employeeInfo={
+
                 {"sam.walker@bluerentalcars.com","c!fas_art"},
                 {"kate.brown@bluerentalcars.com","tad1$Fas"},
                 {"raj.khan@bluerentalcars.com","v7Hg_va^"},
@@ -26,7 +27,8 @@ public class DataProviderUtils {
         return employeeInfo;
     }
     //    Data Provider to get the user credentials from the EXCEL SHEET called 'user_data' (for Day18_DataProvider2 class)
-    @DataProvider
+    @DataProvider //(parallel = true) we can use this to make parallel testing available
+    //it will open as many windows as number of data in excel sheet
     public Object[][] userData(){
         String excelPath = "./resources/data_sheet.xlsx";
         String sheetName = "user_data";
