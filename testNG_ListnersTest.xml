@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-
-    <!--    Adding LISTENERS UTILS -->
     <listeners>
-        <listener class-name="myapp.utilities.ListnersUtils"/>
+        <listener class-name="myapp.utilities.ListnersUtils"></listener>
     </listeners>
-
     <test verbose="2" preserve-order="true"
-          name="/Users/saima/IdeaProjects/testngproject_b197/src/test/java/myapp/tests/listeners/Day19_ListenersTest.java">
+          name="C:/Users/pc/IdeaProjects/testNGProject_B197/src/test/java/myapp/tests/listeners/Day19_ListenersTest.java">
         <classes>
             <class name="myapp.tests.listeners.Day19_ListenersTest">
                 <methods>

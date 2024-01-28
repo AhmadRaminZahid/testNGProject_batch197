@@ -1,11 +1,9 @@
 package myapp.tests.smokeTest;
 import myapp.pages.OrangeHRM_DashboardPage;
 import myapp.pages.OrangeHRM_LoginPage;
-import myapp.utilities.BrowserUtils;
-import myapp.utilities.ConfigReader;
-import myapp.utilities.Driver;
-import myapp.utilities.WaitUtils;
+import myapp.utilities.*;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 public class Day16_OrangeHRMLogin_DynamicWay {
     //    Automate login functionality, using page object model
@@ -15,6 +13,7 @@ public class Day16_OrangeHRMLogin_DynamicWay {
 //    Then verify the login is successful
 //    And logout the application
 //    Then verify the logout is successful
+
 
     @Test
     public void loginTestDynamic(){
